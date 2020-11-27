@@ -1,4 +1,4 @@
-echo "
+echo '
 
 #####################
 ### My alias
@@ -8,9 +8,16 @@ alias clear="clear;neofetch uptime local_ip packages disk memory"
 alias e=subl3
 alias rc="source ~/.bashrc-personal"
 
-" >> ~/.bashrc-personal
+alias gss="git status -sb"
+alias gaa="git add ." # Git Add All
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gpl="git pull"
+alias gp="git push"
+
+' >> ~/.bashrc-personal
 git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
-echo "
+echo '
 
 # Load git prompt
 # https://github.com/magicmonty/bash-git-prompt
@@ -22,6 +29,8 @@ fi
 # Theme for git prompt
 export GIT_PROMPT_THEME=Single_line
 
-" >> ~/.bashrc-personal
-. ~/.bashrc-personal
-
+' >> ~/.bashrc-personal
+echo
+echo "Type the next line to load the new config."
+echo ". ~/.bashrc-personal"
+echo
