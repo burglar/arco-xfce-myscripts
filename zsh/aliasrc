@@ -19,6 +19,7 @@ alias gpl="git pull"
 alias gp="git push"
 
 
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
 
 
